@@ -123,25 +123,29 @@ a:hover{
 }
 
 </style>
+@foreach ($jurnals as $jurnal)
+    
+
 
 <div class="content-group">
-    <a href="/jurnal">
-        <div class="content " onclick="/jurnal">
+    <a href="/jurnals/{{ $jurnal->slug }}">
+        <div class="content">
             <div class="imgJurnal ml-3">
-                <img src="img/{{ $image }}" alt="jurnal" style="width: 180px; height: 273px;">
+                {{-- gambar --}}
+                <img src="img/imgJurnal.jpg" alt="jurnal" style="width: 180px; height: 273px;">
             </div>
             <div class="detail m-2">
             
-                <div class="judulJurnal">{{ $title }}</div>
-                <div class="versiJurnal">{{ $version }}</div>
-                <div class="deskripsiJurnal">{{ $description }}</div>
-                <div class="autorJurnal">{{ $author }}</div>
+                <div class="judulJurnal">{{ $jurnal->nama_jurnal }}</div>
+                <div class="versiJurnal">{{ $jurnal->version }}</div>
+                <div class="deskripsiJurnal">{{ $jurnal->deskripsi }}</div>
+                <div class="autorJurnal">{{ $jurnal->penerbit }}</div>
             </div>
         </div>
     </a>
-    
-    
-    
-
+</div>
+@endforeach
+<div class="d-flex justify-content-end">
+{{ $jurnals->links() }}
 </div>
 @endsection

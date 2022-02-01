@@ -86,6 +86,42 @@
     <b>About Jurnal</b>
     <div class="detailJurnal">
         <b class="jContent">Nama Jurnal</b>
+            <p>{{ $jurnal->nama_jurnal }}</p>
+        <b class="jContent">Frekuensi</b>
+            <p>{{ $jurnal->frekuensi }}</p>
+        <b class="jContent">Penerbit</b>
+            <p>{{ $jurnal->penerbit }}</p>
+        <b class="jContent">Deskripsi</b>
+            <p>{{ $jurnal->deskripsi }}</p>
+    </div>
+
+    <b>Dewan Redaksi</b>
+    <div class="detailJurnal">
+        <b class="jContent">Penanggung Jawab</b>
+            <p>{{ $jurnal->penanggung_jawab }}</p>
+        <b class="jContent">Pengarah</b>
+            <p>{{ $jurnal->pengarah1 }}</p>
+            <p>{{ $jurnal->pengarah2 }}</p>
+        <b class="jContent">Ketua Redaksi</b>
+            <p>{{ $jurnal->ketua_redaksi }}</p>
+        <b class="jContent">Editor</b>
+            <p>{{ $jurnal->editor1 }}</p>
+            <p>{{ $jurnal->editor2 }}</p>
+            <p>{{ $jurnal->editor3 }}</p>
+            <p>{{ $jurnal->editor4 }}</p>
+            <p>{{ $jurnal->editor5 }}</p>
+        <b class="jContent">Data dan Informasi</b>
+            <p>{{ $jurnal->data_dan_informasi1 }}</p>
+            <p>{{ $jurnal->data_dan_informasi2 }}</p>
+            <p>{{ $jurnal->data_dan_informasi3 }}</p>
+            <p>{{ $jurnal->data_dan_informasi4 }}</p>
+    </div>
+
+</div>
+{{-- <div class="content">
+    <b>About Jurnal</b>
+    <div class="detailJurnal">
+        <b class="jContent">Nama Jurnal</b>
             <p>Jurnal Ilmiah Kesehatan Politeknik Bhakti Asih Purwakarta</p>
         <b class="jContent">Frekuensi</b>
             <p>Setahun 2 kali (Januari dan Juli)</p>
@@ -117,6 +153,7 @@
             <p>Try Mustika Aji Krishna S.T</p>
     </div>
 
-</div>
+</div> --}}
+
 
 @endsection

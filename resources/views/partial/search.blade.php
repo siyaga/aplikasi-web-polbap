@@ -54,8 +54,8 @@
     <div class="d-flex flex-column justify-content-between p-4" style="background: #4A96DD; width: 100%;">
         <h1 class="align-self-center text-center font-weight-bold" style="color: white;">JURNAL POLITEKNIK BHAKTI ASIH PURWAKARTA</h1>
         
-          <form class="searchbox align-self-center mb-2">
-				<input type="search" class="searchfield" placeholder="Cari Jurnal...">
+          <form class="searchbox align-self-center mb-2" action="/jurnals">
+				<input type="search" class="searchfield" placeholder="Cari Jurnal..." name="search" value="{{ request('search') }}"> 
 					<button class="iconSearch"></button>
 				</form>
     </div>

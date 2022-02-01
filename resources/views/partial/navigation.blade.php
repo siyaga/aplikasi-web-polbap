@@ -37,10 +37,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link {{ ($titleWeb === "jurnal") ? 'active' : '' }}" href="/jurnal">Home</a>
+          <a class="nav-link {{ ($title === "home") ? 'active' : '' }}" href="/">Beranda</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{ ($titleWeb === "about") ? 'active' : '' }}" href="/about">About</a>
+          <a class="nav-link {{ ($title === "jurnal") ? 'active' : '' }}" href="/jurnals/{{  $jurnal->slug  }}">Jurnal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {{ ($title === "about") ? 'active' : '' }}" href="/about/{{  $jurnal->slug  }}">About</a>
         </li>
         
     </div>

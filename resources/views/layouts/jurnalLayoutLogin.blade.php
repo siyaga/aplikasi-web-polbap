@@ -10,7 +10,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    
     <title>Jurnal Politeknik Bhakti Asih Purwakarta | {{ $title }}</title>
     <link rel="shortcut icon" href="img/logo.ico">
 
@@ -23,6 +22,7 @@
 				justify-content: flex-end;
 				align-items: center;
 
+				position: static;
 				width: 100%;
 				height: 64px;
 
@@ -36,12 +36,9 @@
   <body>
     
     @include('partial.headerUser')
-
-    @include('partial.search')
+    @include('partial.navigationlogin')
     
 
-		
-		</div>
     @yield('container')
 
     <div class="footer">

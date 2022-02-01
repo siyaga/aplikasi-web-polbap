@@ -1,4 +1,4 @@
-@extends('layouts.jurnalLayout')
+@extends('layouts.jurnalLayoutLogin')
 
 @section('container')
 @if (session()->has('success'))

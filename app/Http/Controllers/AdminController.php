@@ -3,13 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use \Cviebrock\EloquentSluggable\Services\SlugService;
 
-class DashboardController extends Controller
+class AdminController extends Controller
 {
     public function index()
     {
-        //view Udah Login
+        
         return view('home',[
             "titleWeb" => "home",
             "title" => "JURNAL ILMIAH KESEHATAN POLITEKNIK BHAKTI ASIH",
@@ -20,14 +19,5 @@ class DashboardController extends Controller
         ]);
     }
 
-    public function store(Request $request)
-    {
-        return $request;
-    }
-
-    // public function checkSlug(Request $request)
-    // {
-    //     $slug = SlugService::createSlug(Jurnal::class, 'slug', $request->nama_jurnal);
-    //     return response()->json(['slug'=>$slug]);
-    // }
+    
 }

@@ -114,14 +114,16 @@
 
     </style>
 
+  
 
     <div class="content">
         <b>Current Issue</b>
         <div class="detailJurnal">
-            <b class="judul"> {{ $version }}: {{ $title }}</b>
-            <img class="img" src="img/{{ $image }}" alt="">
-            <p>{{ $description }}</p>
-            <p>Publish : {{ $publish }}</p>
+            <b class="judul"> {{ $jurnal->versi }}: {{ $jurnal->nama_jurnal }}</b>
+            {{-- gambar --}}
+            <img class="img" src="img/imgJurnal.jpg" alt="">
+            <p>{{ $jurnal->deskripsi }}</p>
+            <p>Publish : {{ $jurnal->penerbit }}</p>
             <button class="dArticle">Download Jurnal</button> 
             <button class="dArticle">Download Article</button> 
         </div>
